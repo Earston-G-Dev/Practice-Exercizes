@@ -35,4 +35,8 @@ const team =[Bry, Zay, Shawn, Knuckle, Greg, Derrel, Antonio, Jedidiah];
 const numberEx = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 //Task-  Create an array of numbers then create a .map() to create a new array that contains square numbers.
 
-
+const square= function(x){
+    numbersEx.forEach(){
+        return numbersEx
+    }
+}
