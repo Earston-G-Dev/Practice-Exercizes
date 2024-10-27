@@ -6,7 +6,9 @@
 </head>
 <body>
   <h1>Arrays</h1>  
-  
+
+
+
   <h3>Topics</h3>
     <ol>
         <li>Concepts</li>
@@ -16,10 +18,172 @@
         <li></li>
     </ol>
 <h3>Exercizes</h3>
-    <h4>Topic1</h4>
+
+
+<h4>Topic1</h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <h4>Topic2</h4>
+    <p>
+        const numberEx = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+//Task-  Create an array of numbers then create a .map() to create a new array that contains square numbers.
+
+const square= function(x){
+    numbersEx.forEach(){
+        return numbersEx
+    }
+}
+
+<p>The issue i had here was  that i used .forEach vs .map. I learned
+    that forEach iterates through the array but it does not make a new one. .map does so.
+    *The explanation below
+
+
+
+    ---Key Points to Note
+    Use .map() Instead of .forEach():
+    
+    .map() is designed to create a new array with the transformed elements, while .forEach() is primarily for performing an action on each element without creating a new array.
+    Accessing the Array:
+    
+    There’s a small typo: numberEx is your array, but in your function, you’re referring to it as numbersEx. This will cause an error because numbersEx isn’t defined.
+</p>
+
+<h5>Solution</h5>
+    <p>using .map()</p>
+    <p>const numberEx = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        // Task: Create an array that contains the squares of each number
+        const squares = numberEx.map(function(x) {
+            return x * x;
+        });
+        
+        console.log(squares); // Output: [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+        </p>
+    </p>
+
+    <h5>Understanding the formula</h5>
+    <h7>Explanation of each part</h7>
+
+    <p>1. Define the Array</p>
+    <p>const numberEx = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        Here, numberEx is an array of numbers from 1 to 10. The goal is to create a new array where each element is the square of the corresponding element in numberEx.
+
+    </p>
+    
+    <p>Using .map():</p>
+    <p>
+        const squares = numberEx.map(function(x) {
+            return x * x;
+        });
+    
+        Let’s break down what’s happening in this line.
+
+        .map(): This array method goes through each element in numberEx, applies a specified function to each element, and returns a new array with the transformed values. It doesn’t modify the original array.
+        
+        The Callback Function: Inside .map(), we pass a function (called a "callback") that takes an element x from numberEx, performs an operation on it, and returns a new value.
+        
+        return x * x: This line takes each number in the original array, squares it, and returns that result to be stored in the new array squares
+        </p>
+    
+    <p>3. Output
+        console.log(squares); // Expected output: [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+       <p>The console.log() statement prints out the new array squares, which contains the squares of each number from the original array numberEx.</p> 
+
+
+       Why .map() Works Here
+       
+The .map() method is ideal here because:
+
+It automatically iterates over each element in the array.
+It returns a new array without changing the original array.
+It applies the transformation you define in the callback function—in this case, squaring each number.
+Visualizing the Process
+Think of .map() as follows:
+
+It starts at the first element in numberEx (1), squares it (1 * 1 = 1), and puts 1 in the new array.
+It moves to the second element (2), squares it (2 * 2 = 4), and adds 4 to the new array.
+This continues until it reaches the last element (10), squares it (10 * 10 = 100), and adds 100 to the new array.
+At the end, squares contains [1, 4, 9, 16, 25, 36, 49, 64, 81, 100].
+    </p>
+    <p></p>
     <h4>Topic3</h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <h4>Topic4</h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <h4>Topic5</h4>
 </body>
 </html>
